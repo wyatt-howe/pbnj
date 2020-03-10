@@ -1,0 +1,33 @@
+{
+  "name": "pbnj",
+  "version": "0.0.1",
+  "description": "Parse by name in JavaScript - A custom math.js parser specific to recursive evaluation",
+  "main": "index.js",
+  "dependencies": {
+    "mathjs": "^6.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'Error: no test specified.' && exit 0"
+  },
+  "files": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyatt-howe/pbnj.git"
+  },
+  "keywords": [
+    "math",
+    "parser",
+    "evaluator",
+    "recursion",
+    "javascript",
+    "call-by-name",
+    "lazy-evaluation"
+  ],
+  "author": "Wyatt Howe <whowe@bu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wyatt-howe/pbnj/issues"
+  },
+  "homepage": "https://github.com/wyatt-howe/pbnj/tree/readme#readme"
+}
