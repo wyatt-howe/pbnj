@@ -14,12 +14,16 @@ const preparse = function (expression) {
   return expression;
 };
 
+var mem = [];
 const iff = function (args, _, scope) {
-  const above_base_case = args[0];
-  const f = args[1];
-  const base_val = args[2];
-
-  return above_base_case.evaluate(scope) ? f.evaluate(scope) : base_val.evaluate(scope);
+  const memotag = args.map(String).join('')+JSON.stringify(scope);
+  let memo = mem[memotag];
+  if (memo === undefined) {
+    const [above_base_case, f, base_val] = args;
+    memo = above_base_case.evaluate(scope) ? f.evaluate(scope) : base_val.evaluate(scope);
+    mem[memotag] = memo;
+  }
+  return memo;
 }; iff.rawArgs = true;
 
 mathjs.import({'iff': iff})
