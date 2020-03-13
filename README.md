@@ -1,5 +1,5 @@
 # pbnj - Parse by name javascript
-Custom math.js parsing to support evaluating recursive equations safely and efficiently.
+Custom math.js parsing to support evaluating recursive equations safely (prevent infinite loops) and efficiently (use dynamic programming).
 
 
 ### Install
